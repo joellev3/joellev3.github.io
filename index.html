@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joëlle van Drie · Geo-Information Scientist</title>
+  <meta name="description" content="Portfolio of Joëlle van Drie, an MSc Geo-Information Science student working with GIS, remote sensing and spatial data analysis." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">JvD</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">MSc Geo-Information Science Student</p>
+      <h1 class="hero__name">Joëlle van Drie</h1>
+      <p class="hero__tagline">
+        I'm fascinated by how spatial data can help answer real-world
+        environmental questions, with a focus on spatial analysis, remote
+        sensing, and geo-scripting.
+      </p>
+      <p class="hero__meta">
+        📍 Nijkerk, The Netherlands &nbsp;·&nbsp; 🎓 MSc Geo-Information Science, Wageningen University &amp; Research
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="files/CV-placeholder.pdf" class="btn btn--ghost" download>Download CV</a>
+        <a href="mailto:joelle.vandrie@wur.nl" class="btn btn--ghost">Get in touch</a>
+        <a href="https://www.linkedin.com/in/joellevdrie" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <h2 class="section__title">About</h2>
+      <div class="about">
+        <p>
+          I'm an MSc Geo-Information Science student at Wageningen University
+          &amp; Research, based in the Netherlands. Before this I completed a
+          BSc in Biology with a major in Ecology and a minor in Data Science.
+          I enjoy combining spatial analysis, scripting and modelling
+          (including agent-based modelling) to answer real-world environmental
+          questions, from landslide risk to deforestation monitoring.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section--alt" id="skills">
+      <h2 class="section__title">Skills &amp; Tools</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>GIS</h3>
+          <ul>
+            <li>ArcGIS Pro</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Remote Sensing</h3>
+          <ul>
+            <li>Google Earth Engine</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <ul>
+            <li>Python</li>
+            <li>R</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Modelling &amp; Data</h3>
+          <ul>
+            <li>Agent-Based Modelling</li>
+            <li>Data Science</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <h2 class="section__title">Featured Projects</h2>
+      <div class="projects">
+
+        <!-- Project 1 -->
+        <article class="project">
+          <div class="project__media">
+            <img src="images/landslide.png" alt="Example slide from the Norway landslide StoryMap" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Landslides in Norway</h3>
+            <p>
+              A group project building an ArcGIS StoryMap that communicates
+              landslide risk in Norway and the need for proper mapping of
+              risk zones.
+            </p>
+            <p class="project__caption"><em>Example image: a screenshot of one slide from the StoryMap.</em></p>
+            <ul class="tags">
+              <li>ArcGIS Pro</li>
+              <li>StoryMaps</li>
+              <li>Risk mapping</li>
+            </ul>
+            <p class="project__role"><strong>Role:</strong> Map design and StoryMap creation</p>
+            <div class="project__links">
+              <a href="https://arcg.is/0Dzmvi0" target="_blank" rel="noopener">View the StoryMap →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="project__media">
+            <img src="images/geotools.png" alt="Suitability analysis for pipeline routing" loading="lazy" />
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Optimal Pipeline Routing</h3>
+            <p>
+              A group assignment to determine the most suitable route for new
+              pipelines using a multi-criteria, condition-based suitability
+              analysis.
+            </p>
+            <ul class="tags">
+              <li>ArcGIS Pro</li>
+              <li>Suitability analysis</li>
+            </ul>
+            <p class="project__role"><strong>Role:</strong> Spatial analysis and mapping</p>
+            <div class="project__links">
+              <a href="images/Geotools.pdf" target="_blank" rel="noopener">View the map (PDF) →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project">
+          <div class="project__media">
+            <img src="images/forestmap.png" alt="Forest-cover loss and oil palm concession map, Indonesia" loading="lazy" class="crop-right" />
+          </div>
+          <div class="project__body">
+            <h3 class="project__title">Oil Palm Concession Mismatches, Indonesia</h3>
+            <p>
+              Identifying commodity concession mismatches in Indonesia:
+              uncovering where forest-cover loss and oil palm planting occur
+              outside designated concession areas, using geo-datasets,
+              scripting, and interactive visualization.
+            </p>
+            <ul class="tags">
+              <li>R (Shiny, sf, terra, dplyr)</li>
+              <li>Python</li>
+              <li>Geo-scripting</li>
+            </ul>
+            <p class="project__role"><strong>Role:</strong> Data analysis, scripting, and visualization</p>
+            <div class="project__links">
+              <span class="project__note">Coursework on the private WUR GitLab (link on request).</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--alt" id="contact">
+      <h2 class="section__title">Get in touch</h2>
+      <p class="contact__lead">
+        Open to collaboration and opportunities in GIS and remote sensing.
+      </p>
+      <div class="contact__links">
+        <a href="mailto:joelle.vandrie@wur.nl" class="btn btn--primary">Email me</a>
+        <a href="files/CV-placeholder.pdf" class="btn btn--ghost" download>Download CV</a>
+        <a href="https://www.linkedin.com/in/joellevdrie" class="btn btn--ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Joëlle van Drie</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
