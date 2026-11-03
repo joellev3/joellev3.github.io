@@ -6,6 +6,9 @@
   <title>Joëlle van Drie · MSc Geo-Information Science Student</title>
   <meta name="description" content="Portfolio of Joëlle van Drie, an MSc Geo-Information Science student working with GIS, remote sensing and spatial data analysis." />
 
+  <!-- Tab icon: satellite emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰️</text></svg>" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +22,6 @@
   <header class="nav">
     <a href="#top" class="nav__logo">JvD</a>
     <nav class="nav__links" id="navLinks">
-      <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -27,19 +29,21 @@
     <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">☰</button>
   </header>
 
-  <!-- ===== Hero ===== -->
+  <!-- ===== Hero + About ===== -->
   <section class="hero" id="top">
     <div class="hero__inner">
       <p class="hero__eyebrow">MSc Geo-Information Science Student</p>
       <h1 class="hero__name">Joëlle van Drie</h1>
       <p class="hero__tagline">
-        I'm fascinated by how spatial data can help answer real-world
-        environmental questions, with a focus on spatial analysis, remote
-        sensing, and geo-scripting.
+        I'm a master's student in Geo-Information Science at Wageningen
+        University &amp; Research. I started out in biology, with a BSc
+        majoring in Ecology and a minor in Data Science, and slowly moved
+        towards working with spatial data. These days I mostly work with
+        LiDAR, satellite and drone data, and I like using code and models
+        (agent-based modelling included) to figure out what is happening in
+        a landscape and why.
       </p>
-      <p class="hero__meta">
-        📍 Nijkerk, The Netherlands &nbsp;·&nbsp; 🎓 MSc Geo-Information Science, Wageningen University &amp; Research
-      </p>
+      <p class="hero__meta">📍 Nijkerk, The Netherlands</p>
       <div class="hero__cta">
         <a href="#projects" class="btn btn--primary">View my work</a>
         <a href="files/CV-placeholder.pdf" class="btn btn--ghost" download>Download CV</a>
@@ -50,21 +54,6 @@
   </section>
 
   <main>
-    <!-- ===== About ===== -->
-    <section class="section" id="about">
-      <h2 class="section__title">About</h2>
-      <div class="about">
-        <p>
-          I'm an MSc Geo-Information Science student at Wageningen University
-          &amp; Research, based in the Netherlands. Before this I completed a
-          BSc in Biology with a major in Ecology and a minor in Data Science.
-          I enjoy combining spatial analysis, scripting and modelling
-          (including agent-based modelling) to answer real-world environmental
-          questions, from landslide risk to deforestation monitoring.
-        </p>
-      </div>
-    </section>
-
     <!-- ===== Skills (sidebar) + Projects ===== -->
     <div class="layout">
 
@@ -136,20 +125,21 @@
           <!-- Project 1: MSc Thesis -->
           <article class="project">
             <figure class="project__media">
-              <img src="images/thesis.jpg" alt="Visualisation of salt marsh vegetation structure, Schor van Baalhoek" loading="lazy" />
-              <figcaption>Visualisation · Schor van Baalhoek salt marsh</figcaption>
+              <img src="images/thesis.jpg" alt="Water buffalo grazing in the Schor van Baalhoek salt marsh" loading="lazy" class="focus-thesis" />
+              <figcaption>Water buffalo grazing at the Schor van Baalhoek</figcaption>
             </figure>
             <div class="project__body">
+              <p class="project__kicker">Master thesis</p>
               <h3 class="project__title">
-                MSc Thesis: Salt Marsh Vegetation &amp; Water Buffalo
+                Salt Marsh Vegetation &amp; Water Buffalo
                 <span class="project__status">In progress</span>
               </h3>
               <p>
-                My ongoing master's thesis combines LiDAR and satellite data to
-                map vegetation structure and heterogeneity in a Dutch salt marsh
-                (Schor van Baalhoek). The aim is to assess how the introduction
-                of water buffalo in 2021 has influenced the vegetation of the
-                area.
+                For my master thesis I use LiDAR and satellite data to map
+                vegetation structure and heterogeneity in the Schor van
+                Baalhoek, a salt marsh in the Netherlands. Water buffalo were
+                introduced there in 2021, and I'm looking at how they have
+                changed the vegetation since.
               </p>
               <ul class="tags">
                 <li>LiDAR</li>
@@ -157,7 +147,6 @@
                 <li>Remote sensing</li>
                 <li>Vegetation structure</li>
               </ul>
-              <p class="project__role"><strong>Role:</strong> Independent thesis research (WUR)</p>
             </div>
           </article>
 
@@ -169,13 +158,14 @@
               <figcaption>Top: averaged velocity grid · Bottom: frame from the drone video</figcaption>
             </figure>
             <div class="project__body">
-              <h3 class="project__title">River Velocity from Drone Footage (ACT)</h3>
+              <p class="project__kicker">Academic Consultancy Training (ACT)</p>
+              <h3 class="project__title">River Velocity from Drone Footage</h3>
               <p>
-                A proof of concept exploring whether drone video footage can be
-                used to measure river flow velocity. The goal: enabling such
-                measurements remotely with drones instead of sending people into
-                the field. This has clear value for military applications, where
-                taking measurements in a conflict zone is dangerous.
+                A proof of concept for Blue Team Intelligence, testing whether
+                river flow velocity can be measured from drone video. If that
+                works, nobody has to go into the field to take these
+                measurements, which matters in military settings where that
+                could mean entering a conflict zone.
               </p>
               <ul class="tags">
                 <li>Python</li>
@@ -183,7 +173,6 @@
                 <li>Image velocimetry</li>
                 <li>Proof of concept</li>
               </ul>
-              <p class="project__role"><strong>Role:</strong> Academic Consultancy Training (ACT) team project</p>
               <div class="project__links">
                 <a href="files/ACT-river-velocity-report.pdf" target="_blank" rel="noopener">Read the report (PDF) →</a>
               </div>
@@ -197,18 +186,17 @@
               <figcaption>Example: one slide from the StoryMap</figcaption>
             </figure>
             <div class="project__body">
+              <p class="project__kicker">Group project</p>
               <h3 class="project__title">Landslides in Norway</h3>
               <p>
-                A group project building an ArcGIS StoryMap that communicates
-                landslide risk in Norway and the need for proper mapping of
-                risk zones.
+                An ArcGIS StoryMap about landslide risk in Norway, and why
+                risk zones need to be mapped properly.
               </p>
               <ul class="tags">
                 <li>ArcGIS Pro</li>
                 <li>StoryMaps</li>
                 <li>Risk mapping</li>
               </ul>
-              <p class="project__role"><strong>Role:</strong> Map design and StoryMap creation</p>
               <div class="project__links">
                 <a href="https://arcg.is/0Dzmvi0" target="_blank" rel="noopener">View the StoryMap →</a>
               </div>
@@ -222,17 +210,17 @@
               <figcaption>Result of the pipeline suitability analysis</figcaption>
             </figure>
             <div class="project__body">
+              <p class="project__kicker">Group assignment</p>
               <h3 class="project__title">Optimal Pipeline Routing</h3>
               <p>
-                A group assignment to determine the most suitable route for new
-                pipelines using a multi-criteria, condition-based suitability
-                analysis.
+                Finding the most suitable route for new pipelines with a
+                multi-criteria suitability analysis based on a set of
+                conditions.
               </p>
               <ul class="tags">
                 <li>ArcGIS Pro</li>
                 <li>Suitability analysis</li>
               </ul>
-              <p class="project__role"><strong>Role:</strong> Spatial analysis and mapping</p>
               <div class="project__links">
                 <a href="images/Geotools.pdf" target="_blank" rel="noopener">View the map (PDF) →</a>
               </div>
@@ -246,22 +234,18 @@
               <figcaption>Forest-cover loss and oil palm concessions, Indonesia</figcaption>
             </figure>
             <div class="project__body">
+              <p class="project__kicker">Geoscripting course project</p>
               <h3 class="project__title">Oil Palm Concession Mismatches, Indonesia</h3>
               <p>
-                Identifying commodity concession mismatches in Indonesia:
-                uncovering where forest-cover loss and oil palm planting occur
-                outside designated concession areas, using geo-datasets,
-                scripting, and interactive visualization.
+                Mapping where forest-cover loss and oil palm planting in
+                Indonesia happen outside the official concession areas, using
+                open geodata, scripting and an interactive Shiny app.
               </p>
               <ul class="tags">
                 <li>R (Shiny, sf, terra, dplyr)</li>
                 <li>Python</li>
                 <li>Geo-scripting</li>
               </ul>
-              <p class="project__role"><strong>Role:</strong> Data analysis, scripting, and visualization</p>
-              <div class="project__links">
-                <span class="project__note">Coursework on the private WUR GitLab (link on request).</span>
-              </div>
             </div>
           </article>
 
