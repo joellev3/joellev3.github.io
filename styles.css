@@ -210,6 +210,13 @@ a { color: var(--moss); }
 }
 /* For images whose legend sits on the right: crop from the left instead */
 .project__media img.crop-right { object-position: right bottom; }
+/* Two related images stacked in one project */
+.project__media--duo {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 3px;
+}
+.project__media--duo img { min-height: 0; }
 /* Placeholder shown when an image is missing (added by script.js) */
 .project__media.is-missing {
   align-items: center;
@@ -223,6 +230,19 @@ a { color: var(--moss); }
 }
 .project__body { padding: 1.8rem; }
 .project__title { color: var(--forest); font-size: 1.35rem; margin-bottom: 0.7rem; }
+.project__status {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
 .project__body > p { color: var(--muted); }
 .project__role { font-size: 0.95rem; color: var(--ink); }
 .tags {
@@ -280,4 +300,5 @@ a { color: var(--moss); }
   .nav__toggle { display: block; }
   .project { grid-template-columns: 1fr; }
   .project__media { min-height: 200px; }
+  .project__media--duo { min-height: 360px; } /* room for both images on phones */
 }
