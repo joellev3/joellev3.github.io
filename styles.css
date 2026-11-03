@@ -200,6 +200,7 @@ a { color: var(--moss); }
   background: linear-gradient(135deg, var(--moss), var(--teal));
   min-height: 240px;
   display: flex;
+  overflow: hidden; 
 }
 .project__media img {
   width: 100%;
@@ -213,10 +214,11 @@ a { color: var(--moss); }
 /* Two related images stacked in one project */
 .project__media--duo {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
   gap: 3px;
 }
-.project__media--duo img { min-height: 0; }
+.project__media--duo img { min-width: 0; min-height: 0; }
 /* Placeholder shown when an image is missing (added by script.js) */
 .project__media.is-missing {
   align-items: center;
