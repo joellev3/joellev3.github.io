@@ -1,5 +1,3 @@
-
-
 // Mobile navigation toggle
 const toggle = document.getElementById("navToggle");
 const links = document.getElementById("navLinks");
@@ -11,18 +9,20 @@ if (toggle && links) {
   );
 }
 
-//Current year in the footer
+// Current year in the footer
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Fallback for project images that haven't been added yet.
-//    If an image fails to load, show a tidy placeholder instead of a broken icon.
+// A missing image is removed; only when none are left is a placeholder shown.
 document.querySelectorAll(".project__media img").forEach((img) => {
   img.addEventListener("error", () => {
     const wrap = img.parentElement;
     const label = img.alt || "Image coming soon";
     img.remove();
-    wrap.classList.add("is-missing");
-    wrap.textContent = label + " (image coming soon)";
+    if (!wrap.querySelector("img")) {
+      wrap.classList.add("is-missing");
+      wrap.textContent = label + " (image coming soon)";
+    }
   });
 });
